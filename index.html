@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Interactive rating component</title>
+
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+
+  <main class="container">
+
+    <section id="ratings" class="ratings">
+      <div class="ratings-logo">
+        <img src="./images/icon-star.svg" alt="A star which is the logo of the app">
+      </div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+      <div class="rating">
+        <input type="radio" name="rating" id="rating-1" value="1">
+        <label for="rating-1">1</label>
+
+        <input type="radio" name="rating" id="rating-2" value="2">
+        <label for="rating-2">2</label>
+
+        <input type="radio" name="rating" id="rating-3" value="3">
+        <label for="rating-3">3</label>
+
+        <input type="radio" name="rating" id="rating-4" value="4">
+        <label for="rating-4">4</label>
+
+        <input type="radio" name="rating" id="rating-5" value="5">
+        <label for="rating-5">5</label>
+      </div>
+
+      <button id="submit-btn">Submit</button>
+    </section>
+
+    <section id="thanks-display" class="thanks">
+      <div class="thanks-logo">
+        <img src="./images/illustration-thank-you.svg" alt="A logo giving thanks">
+      </div>
+      <p class="rating-text">
+        You selected <span id="rating-value-display">5</span> out of 5
+      </p>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
