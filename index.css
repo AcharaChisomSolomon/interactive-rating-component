@@ -95,7 +95,8 @@ button:hover {
 input[type="radio"] {
     display: none;
 }
-input[type="radio"]:hover + label {
+input[type="radio"]:hover + label, 
+input[type="radio"]:focus + label {
     background-color: var(--btn-bg-color);
     color: var(--btn-color);
 }
