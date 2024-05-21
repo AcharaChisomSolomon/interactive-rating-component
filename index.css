@@ -107,7 +107,8 @@ input[type="radio"]:hover + label {
     color: var(--btn-color);
 }
 input[type="radio"]:checked + label,
-input[type="radio"]:focus + label {
+input[type="radio"]:focus + label,
+input[type="radio"]:active + label {
     background-color: var(--btn-bg-color);
     color: var(--btn-color);
 }
