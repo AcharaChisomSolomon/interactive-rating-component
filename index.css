@@ -93,7 +93,14 @@ button:hover {
     padding: 1.5rem 0 clamp(1.5rem, -0.42352941176470593rem + 9.411764705882353vw, 2rem);
 }
 input[type="radio"] {
-    display: none;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    padding: 0;
 }
 input[type="radio"]:hover + label, 
 input[type="radio"]:focus + label {
