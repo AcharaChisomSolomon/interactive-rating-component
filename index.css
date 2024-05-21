@@ -102,13 +102,13 @@ input[type="radio"] {
     position: absolute;
     padding: 0;
 }
-input[type="radio"]:hover + label, 
-input[type="radio"]:focus + label {
-    background-color: var(--btn-bg-color);
+input[type="radio"]:hover + label {
+    background-color: var(--heading-color);
     color: var(--btn-color);
 }
-input[type="radio"]:checked + label {
-    background-color: var(--heading-color);
+input[type="radio"]:checked + label,
+input[type="radio"]:focus + label {
+    background-color: var(--btn-bg-color);
     color: var(--btn-color);
 }
 label {
